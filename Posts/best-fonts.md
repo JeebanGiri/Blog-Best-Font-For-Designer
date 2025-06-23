@@ -78,6 +78,23 @@ It doesn’t support fancy ligatures like Fira Code, but that's part of its char
 
  💡 **Pro Tip:** For serious coding sessions, use Source Code Pro Regular or Medium—it’s designed to keep your eyes fresh and your code crystal clear, sans distractions.
 
+
+## Quick Comparison Table
+
+
+<table class="fancy-font-table">
+
+| Font             | Type        | Best Use Case         | Ligatures |
+|------------------|-------------|------------------------|-----------|
+| Roboto           | Sans-serif  | UI & Mobile Apps       | ❌        |
+| Fira Code        | Monospaced  | Code Editors           | ✅ 🧠     |
+| Montserrat       | Display     | Headlines & Branding   | ❌        |
+| Open Sans        | Humanist    | Body Text              | ❌        |
+| Source Code Pro  | Monospaced  | Traditional Coding     | ❌        |
+
+</table>
+
+
 ## How to Choose Your Font
 
 - Consider your audience and the medium (print, web, mobile).  
