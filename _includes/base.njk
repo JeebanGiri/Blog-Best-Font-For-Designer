@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #222;
+        background: #f9f9f9;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      /* Headings */
+      .content h2 {
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #333;
+        font-family: "Montserrat", sans-serif;
+        border-left: 5px solid #0077cc;
+        padding-left: 15px;
+      }
+
+      /* Unordered Lists */
+      .content ul {
+        padding-left: 25px;
+        margin-bottom: 30px;
+      }
+
+      /* List items */
+      .content ul li {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        position: relative;
+        list-style: none;
+        padding-left: 25px;
+        text-align: justify;
+      }
+
+      /* Custom bullet */
+      .content ul li::before {
+        content: "➤";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #0077cc;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .author {
+        display: grid;
+        gap: 5px;
+        margin-bottom: 40px;
+      }
+      .author img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #0077cc;
+      }
+      article img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 30px 0;
+        display: block;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+      article p {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+      blockquote p {
+        text-align: justify;
+      }
+      .author p {
+        font-style: italic;
+      }
+      blockquote {
+        background: #f0f4f8;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-left: 5px solid #3b82f6;
+        padding: 1em 1.5em;
+        margin: 2em 0;
+        font-style: italic;
+        font-size: 1.2rem;
+        color: #1e293b;
+        border-radius: 8px;
+        /* max-width: 600px; */
+        line-height: 1.5;
+        transition: box-shadow 0.3s ease;
+      }
+
+      blockquote:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      @media (max-width: 600px) {
+        .author {
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{ title }}</h1>
+      <div class="content">
+        {{ content | safe }}
+        <section class="author">
+          <img src="/assets/images/profile.jpeg" alt="Jeeban Giri" />
+          <p>Full Stack Developer</p>
+          <span><i class="bi bi-geo-alt-fill"></i> Itahari, Nepal</span>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

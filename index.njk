@@ -1,0 +1,12 @@
+---
+title: 
+layout: base.njk
+---
+
+{% for post in collections.post | reverse %}
+<article>
+  <h2>{{ post.data.title }}</h2>
+  <div>{{ post.content | safe }}</div>
+</article>
+
+{% endfor %}
